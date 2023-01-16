@@ -1,5 +1,14 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import {
+  AiFillGithub,
+  AiFillLinkedin,
+  AiFillInstagram,
+  AiFillTwitterCircle,
+} from "react-icons/ai";
+
+import Image from "next/image";
+import deved from "../public/pfp.png";
 
 export default function Home() {
   return (
@@ -10,21 +19,58 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <main className="bg-white px-10 ">
         <section className=" min-h-screen">
-          <nav className="py-10">
-            <h1>developed by raghav</h1>
-            <ul>
+          <nav className="py-10 mb=12 flex justify-between">
+            <h1 className=" text-xl font-burtons">madebyraghav</h1>
+            <ul className="flex items-center">
               <li>
-                <BsFillMoonStarsFill />
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/raghav-agrawal-657b87160/">
+                <a
+                  href="https://www.linkedin.com/in/raghav-agrawal-657b87160/"
+                  target={"_blank"}
+                  className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                >
                   Resume
                 </a>
               </li>
             </ul>
           </nav>
+          <div className=" text-center py-10">
+            <h2 className=" text-4xl py-2 text-teal-600 font-medium">
+              Raghav Agrawal
+            </h2>
+            <h3 className="text-xl py-2">Developer and Designer</h3>
+            <p className="text-md py-5 leading-8 text-gray-800">
+              Currently a B.Tech undergrad who is passionate about learn new
+              technologies and designing new websites and mobile applications{" "}
+            </p>
+          </div>
+          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 mb-5 ">
+            <a href="">
+              <AiFillTwitterCircle />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/raghav-agrawal-657b87160/"
+              target={"_blank"}
+            >
+              <AiFillLinkedin />
+            </a>
+            <a
+              href="https://github.com/code-Raghav?tab=repositories"
+              target={"_blank"}
+            >
+              <AiFillGithub />
+            </a>
+          </div>
+          <div className=" relative bg-gradient-to-b from-teal-500 rounded-t-full overflow-hidden">
+            <Image src={deved} />
+          </div>
+        </section>
+
+        <section>
+          <div>
+            <h3 className=" text-3xl py1">Services I offer</h3>
+          </div>
         </section>
       </main>
     </>
