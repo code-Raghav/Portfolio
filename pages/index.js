@@ -9,6 +9,8 @@ import {
 
 import Image from "next/image";
 import deved from "../public/pfp.png";
+import design from "../public/design.png";
+import code from "../public/code.png";
 
 export default function Home() {
   return (
@@ -26,9 +28,10 @@ export default function Home() {
             <ul className="flex items-center">
               <li>
                 <a
-                  href="https://www.linkedin.com/in/raghav-agrawal-657b87160/"
+                  href="https://docs.google.com/document/d/1Nc45yZ7C8P1sZbQ_LsQM7qJ93_deOO0XQC2VwRS0WYY/edit?usp=sharing"
                   target={"_blank"}
                   className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                  rel="noopener noreferrer"
                 >
                   Resume
                 </a>
@@ -41,8 +44,10 @@ export default function Home() {
             </h2>
             <h3 className="text-xl py-2">Developer and Designer</h3>
             <p className="text-md py-5 leading-8 text-gray-800">
-              Currently a B.Tech undergrad who is passionate about learn new
-              technologies and designing new websites and mobile applications{" "}
+              Currently a B.Tech undergrad who is passionate about designing and
+              <span className=" text-teal-500"> development</span> of websites
+              and mobile applications and{" "}
+              <span className=" text-teal-500">learning</span> new technologies
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 mb-5 ">
@@ -51,25 +56,58 @@ export default function Home() {
             </a>
             <a
               href="https://www.linkedin.com/in/raghav-agrawal-657b87160/"
+              rel="noopener noreferrer"
               target={"_blank"}
             >
               <AiFillLinkedin />
             </a>
             <a
               href="https://github.com/code-Raghav?tab=repositories"
+              rel="noopener noreferrer"
               target={"_blank"}
             >
               <AiFillGithub />
             </a>
           </div>
           <div className=" relative bg-gradient-to-b from-teal-500 rounded-t-full overflow-hidden">
-            <Image src={deved} />
+            <Image src={deved} alt="Profile Picture here" />
           </div>
         </section>
 
-        <section>
+        <section className="py-10">
           <div>
-            <h3 className=" text-3xl py1">Services I offer</h3>
+            <div className="shadow-xl text-center py-5">
+              <div className=" grid place-items-center pt-5">
+                <Image src={code} width={100} height={100} />
+              </div>
+
+              <h3 className=" text-lg font-medium">Development</h3>
+              <p className=" py-2">Web and Mobile Applications</p>
+              <h4 className=" py-4 text-teal-600">My Stack</h4>
+              <p className=" text-gray-800 py-1">Modern Javascript</p>
+              <p className=" text-gray-800 py-1">React Js</p>
+              <p className=" text-gray-800 py-1">React Native</p>
+              <p className=" text-gray-800 py-1">Next Js</p>
+              <p className=" text-gray-800 py-1">Flutter </p>
+              <p className=" text-gray-800 py-1">Backend: Node Js </p>
+              <p className=" text-gray-800 py-1">Version Control: Git </p>
+            </div>
+          </div>
+          <div>
+            <div className="shadow-xl text-center p-5 ">
+              <div className=" grid place-items-center pt-5">
+                <Image src={design} width={100} />
+              </div>
+
+              <h3 className=" text-lg font-medium">Designing</h3>
+              <p className=" py-2">
+                Creating graphics for use in various projects
+              </p>
+              <h4 className=" py-4 text-teal-600">Design tools I use</h4>
+              <p className=" text-gray-800 py-1">Photoshop</p>
+              <p className=" text-gray-800 py-1">Blender</p>
+              <p className=" text-gray-800 py-1">Adobe Premier Pro</p>
+            </div>
           </div>
         </section>
       </main>
