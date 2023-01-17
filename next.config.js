@@ -1,12 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  images: {
-    loader: "akamai",
-    path: "",
-  },
-  basePath: "/Portfolio",
-  assetPrefix: "/Portfolio",
+
+  // Add basePath
+  basePath: "/github-pages",
 };
 
 module.exports = nextConfig;
