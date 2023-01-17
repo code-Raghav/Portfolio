@@ -30,6 +30,7 @@ export default function Home() {
                 <a
                   href="https://docs.google.com/document/d/1Nc45yZ7C8P1sZbQ_LsQM7qJ93_deOO0XQC2VwRS0WYY/edit?usp=sharing"
                   target={"_blank"}
+                  rel="noreferrer"
                   className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
                   rel="noopener noreferrer"
                 >
@@ -58,6 +59,7 @@ export default function Home() {
               href="https://www.linkedin.com/in/raghav-agrawal-657b87160/"
               rel="noopener noreferrer"
               target={"_blank"}
+              rel="noreferrer"
             >
               <AiFillLinkedin />
             </a>
@@ -65,6 +67,7 @@ export default function Home() {
               href="https://github.com/code-Raghav?tab=repositories"
               rel="noopener noreferrer"
               target={"_blank"}
+              rel="noreferrer"
             >
               <AiFillGithub />
             </a>
