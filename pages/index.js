@@ -51,9 +51,6 @@ export default function Home() {
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 mb-5 ">
-            <a href="">
-              <AiFillTwitterCircle />
-            </a>
             <a
               href="https://www.linkedin.com/in/raghav-agrawal-657b87160/"
               rel="noopener noreferrer"
