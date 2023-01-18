@@ -21,7 +21,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-white px-10 ">
+      <main className="bg-white px-10 md:px-20 lg:px-40 ">
         <section className=" min-h-screen">
           <nav className="py-10 mb=12 flex justify-between">
             <h1 className=" text-xl font-burtons">madebyraghav</h1>
@@ -39,12 +39,14 @@ export default function Home() {
             </ul>
           </nav>
           <div className=" text-center py-10">
-            <h2 className=" text-4xl py-2 text-teal-600 font-medium">
+            <h2 className=" text-4xl py-2 text-teal-600 font-medium md:text-6xl lg:text-7xl">
               Raghav Agrawal
             </h2>
-            <h3 className="text-xl py-2">Developer and Designer</h3>
-            <p className="text-md py-5 leading-8 text-gray-800">
-              Currently a B.Tech undergrad who is passionate about designing and
+            <h3 className="text-xl py-2 md:text-3xl lg:text-4xl">
+              Developer and Designer
+            </h3>
+            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto lg:text-xxl">
+              Hi, B.Tech undergrad who is passionate about designing and
               <span className=" text-teal-500"> development</span> of websites
               and mobile applications and{" "}
               <span className=" text-teal-500">learning</span> new technologies
@@ -66,45 +68,42 @@ export default function Home() {
               <AiFillGithub />
             </a>
           </div>
-          <div className=" relative bg-gradient-to-b from-teal-500 rounded-t-full overflow-hidden">
+          <div className=" relative bg-gradient-to-b from-teal-500 rounded-t-full overflow-hidden lg:mx-35 md:mx-20">
             <Image src={deved} alt="Profile Picture here" />
           </div>
         </section>
 
         <section className="py-10">
-          <div>
-            <div className="shadow-xl text-center py-5">
-              <div className=" grid place-items-center pt-5">
-                <Image src={code} width={100} height={100} alt="image" />
-              </div>
-
-              <h3 className=" text-lg font-medium">Development</h3>
-              <p className=" py-2">Web and Mobile Applications</p>
-              <h4 className=" py-4 text-teal-600">My Stack</h4>
-              <p className=" text-gray-800 py-1">Modern Javascript</p>
-              <p className=" text-gray-800 py-1">React Js</p>
-              <p className=" text-gray-800 py-1">React Native</p>
-              <p className=" text-gray-800 py-1">Next Js</p>
-              <p className=" text-gray-800 py-1">Flutter </p>
-              <p className=" text-gray-800 py-1">Backend: Node Js </p>
-              <p className=" text-gray-800 py-1">Version Control: Git </p>
+          <div className="shadow-xl text-center py-5 rounded-xlij">
+            <div className=" grid place-items-center pt-5">
+              <Image src={code} width={100} height={100} alt="image" />
             </div>
+
+            <h3 className=" text-lg font-medium">Development</h3>
+            <p className=" py-2">Web and Mobile Applications</p>
+            <h4 className=" py-4 text-teal-600">My Stack</h4>
+            <p className=" text-gray-800 py-1">Modern Javascript</p>
+            <p className=" text-gray-800 py-1">React Js</p>
+            <p className=" text-gray-800 py-1">React Native</p>
+            <p className=" text-gray-800 py-1">Next Js</p>
+            <p className=" text-gray-800 py-1">Flutter </p>
+            <p className=" text-gray-800 py-1">Backend: Node Js </p>
+            <p className=" text-gray-800 py-1">Version Control: Git </p>
           </div>
-          <div>
-            <div className="shadow-xl text-center p-5 ">
-              <div className=" grid place-items-center pt-5">
-                <Image src={design} width={100} alt="image" />
-              </div>
 
-              <h3 className=" text-lg font-medium">Designing</h3>
-              <p className=" py-2">
-                Creating graphics for use in various projects
-              </p>
-              <h4 className=" py-4 text-teal-600">Design tools I use</h4>
-              <p className=" text-gray-800 py-1">Photoshop</p>
-              <p className=" text-gray-800 py-1">Blender</p>
-              <p className=" text-gray-800 py-1">Adobe Premier Pro</p>
+          <div className="shadow-xl text-center p-5 rounded-xlij ">
+            <div className=" grid place-items-center pt-5">
+              <Image src={design} width={100} alt="image" />
             </div>
+
+            <h3 className=" text-lg font-medium">Designing</h3>
+            <p className=" py-2">
+              Creating graphics for use in various projects
+            </p>
+            <h4 className=" py-4 text-teal-600">Design tools I use</h4>
+            <p className=" text-gray-800 py-1">Photoshop</p>
+            <p className=" text-gray-800 py-1">Blender</p>
+            <p className=" text-gray-800 py-1">Adobe Premier Pro</p>
           </div>
         </section>
       </main>
