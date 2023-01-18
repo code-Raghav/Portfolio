@@ -46,9 +46,9 @@ export default function Home() {
               Developer and Designer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto lg:text-xxl">
-              Hi, B.Tech undergrad who is passionate about designing and
+              Hi, I am a B.Tech undergrad who is passionate about designing and
               <span className=" text-teal-500"> development</span> of websites
-              and mobile applications and{" "}
+              and mobile applications and constantly{" "}
               <span className=" text-teal-500">learning</span> new technologies
             </p>
           </div>
